@@ -19,20 +19,9 @@ var _hmt = _hmt || [];
 })();
 	
 	
-var oImg1 = document.getElementById('img1');
-  
-var onOff1 = true;
-  
-oImg1.onclick = function() {
-    if ( onOff1 ) {
-        oImg1.src = 'img/111.jpg';
-        onOff1 = false;
-    }
-    else {
-        oImg1.src = 'img/1.jpg';
-        onOff1 = true;
-    }
-};
+function change() {
+        document.getElementById("img1").src="img/111.jpg";
+}
 
 
 </script>
@@ -43,7 +32,9 @@ oImg1.onclick = function() {
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-4 col-md-4">
-					<img id="img1" src="img/1.jpg" alt="...">
+				<a href="https://yyming009.github.io" class="thumbnail">
+					<img click="change()" id="img1" src="img/1.jpg" alt="...">
+				</a>		
 			</div>
 			<div class="col-xs-4 col-md-4">
 				<a href="https://yyming009.github.io" class="thumbnail">
